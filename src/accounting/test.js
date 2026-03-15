@@ -4,13 +4,13 @@ const fs = require('fs');
 
 // Import the functions from the main app
 const path = require('path');
-const appPath = path.resolve(__dirname, '../index.js');
+const appPath = path.resolve(__dirname, './index.js');
 let readBalance, writeBalance;
 
 describe('Account Management System', function () {
   before(() => {
     // Import functions after mock-fs is set up
-    ({ readBalance, writeBalance } = require('../index.js'));
+    ({ readBalance, writeBalance } = require('./index.js'));
   });
 
   beforeEach(() => {
